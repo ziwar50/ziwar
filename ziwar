@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>موقعي البسيط</title>
+</head>
+<body>
+  <h1>مرحبًا بك في موقعي</h1>
+  <p>أدخل الكود:</p>
+  <input type="text" id="myCode" />
+  <button onclick="checkCode()">تحقق</button>
+  <p id="result"></p>
+
+  <script>
+    function checkCode() {
+      var code = document.getElementById("myCode").value;
+      if (code === "CODE123") {
+        document.getElementById("result").innerText = "✅ الكود صحيح";
+      } else {
+        document.getElementById("result").innerText = "❌ الكود غير صحيح";
+      }
+    }
+  </script>
+</body>
+</html>
